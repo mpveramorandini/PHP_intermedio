@@ -28,6 +28,8 @@
 if(isset($_GET['error'])){
   echo "<h3> Para acceder a esta seccion debe ingresar como cliente </h3>";
 }
+
+
 ?>
 
 </body>
