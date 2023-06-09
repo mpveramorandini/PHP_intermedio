@@ -5,13 +5,13 @@ if (isset($_SESSION['admin'])) {
 
   include("header.php");
 
-  $nro1 = rand(0,9);
-  $nro2 = rand(0,9);
-  $nro3 = rand(0,9);
+  $nro1 = rand(0, 9);
+  $nro2 = rand(0, 9);
+  $nro3 = rand(0, 9);
   $letra = array('a', 'h', 'g', 'd', 'm', 'k');
   $simbolo = array('#', '$', '&', '$', '/', '@');
-  $mezcla_letra = rand(0,5);
-  $mezcla_simbolo = rand(0,5);
+  $mezcla_letra = rand(0, 5);
+  $mezcla_simbolo = rand(0, 5);
 
 
   $_SESSION['codigo_captcha'] = $nro1 . $letra[$mezcla_letra] . $nro1 . $simbolo[$mezcla_simbolo] . $nro3;
@@ -44,7 +44,6 @@ if (isset($_SESSION['admin'])) {
       </p>
     </form>
   </div>
-
 
 
 
